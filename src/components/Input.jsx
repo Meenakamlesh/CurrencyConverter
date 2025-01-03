@@ -1,7 +1,6 @@
 import React, { useId } from "react";
 
-function Input({
-  label,
+function Input({ label,
   amount,
   onAmountChange,
   onCurrencyChange,
@@ -9,8 +8,7 @@ function Input({
   selectCurrency = "usd",
   amountDisable = false,
   currencyDisable = false,
-  className = "",
-}) {
+  className = "",}) {
   const amountinputId = useId();
   return (
     <div className={`bg-white p-3 rounded-lg text-sm flex flex-wrap ${className}`}>
